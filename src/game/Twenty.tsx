@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { NODES, START, guessList, isStump, type Ask } from "./twenty";
 
@@ -38,9 +37,7 @@ export function Twenty() {
   return (
     <div className="safe-top safe-x mx-auto flex min-h-full w-full max-w-md flex-col px-4 pb-8 text-cream">
       <div className="flex items-center justify-between gap-3 py-4">
-        <Link to="/" className="min-h-11 rounded-full px-3 py-2 text-sm font-medium text-gold">
-          Yard game
-        </Link>
+        <p className="font-display text-lg font-bold text-cream">20 Questions</p>
         <p className="text-sm font-medium text-cream/80">
           {won ? `${asked} questions` : `Question ${Math.min(asked + 1, MAX)} of ${MAX}`}
         </p>

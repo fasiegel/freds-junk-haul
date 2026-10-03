@@ -14,7 +14,7 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover",
       },
       { title: APP_NAME },
-      { name: "description", content: "Free junk-haul game. Fred collects the mess. Play in the browser, including on your phone." },
+      { name: "description", content: "Fred asks up to 20 questions and guesses what you need hauled. Free in the browser." },
       { name: "theme-color", content: "#1c2418" },
       { name: "mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
