@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { Truck } from "lucide-react";
 import { HATS, YARDS, type HatId } from "./content";
 import { useGame } from "./store";
@@ -109,9 +110,15 @@ export function Screens() {
             </ul>
             <p className="mt-4 text-sm text-cream/80">Caps unlock by clearing yards. Best score {bestScore}.</p>
             <Hats />
+            <Link
+              to="/guess"
+              className="mt-4 flex min-h-12 w-full items-center justify-center rounded-xl bg-gold px-4 py-3 text-lg font-bold text-ink"
+            >
+              20 Questions
+            </Link>
             <button
               type="button"
-              className="mt-4 min-h-12 w-full rounded-xl bg-gold px-4 py-3 text-lg font-bold text-ink"
+              className="mt-3 min-h-12 w-full rounded-xl border border-cream/40 px-4 py-3 text-lg font-bold text-cream"
               onClick={() => {
                 unlockAudio();
                 startRun();
